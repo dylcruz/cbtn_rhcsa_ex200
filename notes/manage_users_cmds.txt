@@ -1,0 +1,11 @@
+User Management
+ - useradd - Create users
+ - userdel - Delete users
+ - usermod - Modify users
+
+Group Management
+ - groupadd - Create groups
+
+SUDO Management
+ - visudo - Edit sudoers file
+
