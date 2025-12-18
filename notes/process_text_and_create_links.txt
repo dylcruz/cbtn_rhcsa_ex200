@@ -1,0 +1,45 @@
+I/O Redirection
+
+STDIN/OUT/ERR
+ - 0 in
+ - 1 out (default > (or >> for append))
+ - 2 err
+
+To append use >>
+
+< is used for input redirection
+
+--
+
+Pipe Command
+ - Redirects output to another command
+ - cat /var/log/messages | less
+
+Grep Command
+ - Use -i flag to search case-insensitive
+ - Use -r flag to search recursively
+ - Use -n flag to get line number of where match was found
+ - Use -c flag to return count of matches
+ - Use -v flag to invert the search
+
+REGEX
+ - $ = end of line
+ - ^ = start of line
+ - . matches 1 of any character
+ - * modifies match to any amount of time
+ - [] matches any between
+
+Head Command
+ - Shows first 10 lines of a file
+ - Use -n flag to choose amount of lines
+
+Tail Command
+ - Shows last x lines of a file
+ - Use -n flag to choose amount of lines
+ - Use -f flag to output appended data as the file grows
+
+ln command
+ - Used to create links to files (same inode)
+ - Use -s flag to create a symlink
+ - Hard link needs to be on same file system, softs can be on different
+ - Original file cannot move for softlink to work

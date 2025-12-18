@@ -1,0 +1,12 @@
+cat
+cut
+cot
+bit
+bat
+but
+dog
+dot
+dig
+can
+car
+confident
