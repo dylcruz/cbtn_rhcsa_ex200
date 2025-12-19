@@ -1,0 +1,10 @@
+awk Command
+ - awk '{print $1}' file --> prints first column if using space as seperator 
+ - Use -F(,) to change the seperator awk uses during processing
+ - Use $NF to reference the last column
+
+sed Command
+ - Use -n flag to prevent rest of file from printing
+ - Leaves original file unchanged by default
+ - Use -i flag to make changes
+
