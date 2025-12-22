@@ -1,0 +1,20 @@
+ls Command
+ - List contents of directories
+ - -a flag shows hidden (.) files
+ - -l flag for long list
+ - -h flag for human-readable file sizes
+
+mkdir Command
+ - Use -p flag to create nested directories
+
+touch Command
+ - 
+
+rmdir Command
+ - 
+
+cp Command
+ - 
+
+mv Command
+ - 
