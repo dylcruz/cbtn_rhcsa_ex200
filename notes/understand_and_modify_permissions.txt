@@ -1,0 +1,31 @@
+UGO - Users, Groups, Others
+RWX - Read, Write, Execute
+
+chown Command
+ - chown [user]:[group] file
+ - You can also do just user or just group
+
+chmod Command
+ - chmod [target][operator][permission] file/dir
+ - chmod o+r /Test
+ - chmod ug=wr testfile
+
+Octal Notation
+ - 4 - Read
+ - 2 - Write
+ - 1 - Execute
+
+Special Permissions
+ - SUID - File that has this permission will execute with the perms of the owner
+   - Uses 's' for symbolic (user) or 4 for octal
+ - SGID - Runs with the permissions of the group
+   - Uses 's' for symbolic (group) or 2 for octal
+ - Sticky - Allows only the file owner (and root user) to delete the file
+   - Uses 't' for symbolic (other) or 1 for octal
+
+Default Permissions
+ - File default - 0666
+ - Dir default - 0777
+ - umask command - Shows value affecting default values
+   - 0777-0022=0755
+
