@@ -1,0 +1,6 @@
+IP Command
+  - ip addr - Shows basic network information
+  - ip route - Shows routing information
+
+nmtui Command
+  - Terminal UI editor for network connections
