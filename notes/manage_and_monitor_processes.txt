@@ -1,0 +1,37 @@
+ps
+  - Shows currently running processes
+  - -a flag shows all system processes rather than just user
+  - -ef is a more formatted list
+
+pstree
+  - Shows a tree-like structure of parent-child process relationships
+
+top
+  - Shows memory and cpu usage of running processes
+  - SHIFT+M changes to memory usage order
+  - -d flag sets update interval in seconds
+
+free
+  - displays free and used memory in the system
+  - parses /proc/meminfo
+
+sync
+  - Writes the cache to disk
+
+kill
+  - Sends specified signal to the specified process
+  - Defaults to TERM, pass in -KILL for ungraceful shutdown
+
+pidof
+  - Returns the PID of the passed in command
+
+jobs
+  - Shows stopped / suspended processes
+  - Resume using fg %<NUM>
+  - & at end of command runs it in the background, gives access to terminal
+  - End bg job by kill %<NUM>
+
+nice / renice
+  - Adds a positive or negative number to the process' priority
+  - nice -n 5 sleep 60&
+
