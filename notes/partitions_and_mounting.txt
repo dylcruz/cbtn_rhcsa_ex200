@@ -1,0 +1,41 @@
+MBR (Master boot record) - Old format, 4 partitions (3 prim / 1 ext). Ext can be divided into logical partitions
+GPT - 128 partitions
+
+lsblk -f - Lists block devices
+
+fdisk (default mbr)
+  - fdisk {path to disk}
+  - 'n' for new partition, 'w' to write changes
+
+gdisk (default gpt)
+  - gdisk {path to disk}
+  - 'n' for new partition, 'w' to write changes
+
+parted - another partition manipulation program
+  - mklabel gpt
+  - mkpart primary ext4
+  - print - Shows what will be done
+
+ext4 (extended) filesystem
+  - Default on many popular linux distros (debian / Ubuntu)
+
+mkfs (make filesystem)
+  - need to specify the version when calling command: mkfs.ext4
+
+xfs 
+  - COW (Copy on write)
+  - Cannot decrease size like ext, but can increase
+
+SWAP partition
+  - Used like page memory on Windows
+  - When creating a partition, need to specify type to SWAP (Linux swap)
+
+mount
+  - Mounts the targeted filesystem to a folder
+  - mount -t <type> <Path to device> <Mountpoint>
+  - mount -U <device UUID> <Mountpoint>
+
+Process of adding storage:
+  - Create partition (fdisk / gdisk)
+  - Create filesystem (mkfs.ext4 / mkfs.xfs)
+  - 
